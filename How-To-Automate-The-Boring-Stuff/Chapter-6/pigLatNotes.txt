@@ -1,0 +1,7 @@
+Line 17:
+
+You don't get an index out of range error when slicing out of a string's index range.
+because your are returning a substring/sequence of that original string, which can be empty.
+
+when you call on a string's index you must return a value that is within range.
+i.e. string[0] must return a value vs string[1:0] doesn't need to. 
